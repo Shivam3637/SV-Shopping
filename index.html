@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="./js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <link rel="stylesheet" href="./css/aos.css">
+  <script src="./js/aos.js"></script>
+  
+</head>
+
+<body>
+
+  <nav class="container-fluid navbar navbar-expand-lg bg-primary-subtle sticky-top">
+    <div class="container">
+      <a class="a navbar-brand" href="#">SV Shopping</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item ms-lg-3">
+            <a class="nav-link active" aria-current="page" href="index.html"><span class="fa fa-home"></span>&nbsp;Home</a>
+          </li>
+          <form class="d-flex ms-lg-5" role="search">
+            <input class="form-control me-2 rounded-5" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success rounded-4" type="submit">Search</button>
+          </form>
+          <li class="nav-item  ms-lg-5">
+            <div class="dropdown">
+              <a class="btn btn-light border-dark ps-4 pe-4" href="./files/My profile.html" role="button" data-bs-toggle="dropdown btn"
+                aria-expanded="false">
+                Login
+              </a>
+
+              <ul class="dropdown-menu border-3 bg-info-subtle">
+                <li>New customer<a class="link-danger" href="#" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">&nbsp;sign up</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item link-secondary" href="./files/My profile.html"><span
+                      class="fa fa-user"></span>&nbsp;<b>My
+                      Profile</b></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item link-secondary" href="./files/My profile.html"><span
+                      class="fa fa-reorder"></span>&nbsp;<b>Order</b></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item link-secondary" href="./files/My profile.html"><span
+                      class="fa fa-heart"></span>&nbsp;<b>Wishlist</b></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item link-secondary" href="./files/My profile.html"><span
+                      class="fa fa-award"></span>&nbsp;<b>Rewards</b></a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item ms-lg-5">
+            <a class="nav-link" href="./files/cart.html"><span class="fa fa-cart-shopping"></span>&nbsp;Cart</a>
+          </li>
+          <li class="nav-item ms-lg-5">
+            <div class="dropdown">
+              <a class=" nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item link-secondary" href="./files/notification.html"><span
+                      class="fa fa-bell"></span>&nbsp;<b>Notification</b></a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                
+              </ul>
+            </div>
+          </li>
+
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-info-subtle text-center">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">SignUp</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <input class="number" type="number" placeholder="Enter Your Mobile Number">
+          </div>
+          <div>
+            <button>CONTINUE</button>
+          </div>
+          <div>
+            <button class="exiting" data-bs-toggle="modal" data-bs-target="#existing">Existing User? Log in</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="existing" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-info-subtle text-center">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">SignUp</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div>
+            <input class="number" type="number" placeholder="Enter Your Mobile Number">
+          </div>
+          <div>
+            <button>Request OTP</button>
+          </div>
+          <div class="pt-5">
+            <p><a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">New to sv shopping? Create an
+                account</a></p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" second container-fluid text-center">
+    <div class="row">
+      <div class="col ">
+        <a href=""><img class="object-fit-xl-contain" src="./images/grocery.webp" height="90px" width="90px">Grocery</a>
+
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/mobile.webp" height="90px" width="90px">Mobile</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/Fashion.webp" height="90px" width="90px">Fashion</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/electronic.webp" height="90px" width="90px">Electronic</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/home.webp" height="90px" width="90px">Home</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/application.webp" height="90px" width="90px">Application</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/travel.webp" height="90px" width="90px">Travel</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/top offer.webp" height="90px" width="90px">Top offer</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/toys.webp" height="90px" width="90px">Toys</a>
+      </div>
+      <div class="col">
+        <a href=""><img src="./images/two wheelers.webp" height="90px" width="90px">Two wheelers</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  </div>
+
+  <div id="carouselExample" class="carousel slide ">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/slider 1.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slider 2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/slider 4.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- best of electronic -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2" data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class="best card h-100">
+        <h2 class="mt-5 ms-3 text-light">Best of Electronic</h2>
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <a href="./files/printer.html" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+
+
+  </div>
+  <!-- Beauty, Food, Toys & more -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" beauty card h-100">
+        <h2 class="mt-5 ms-3 text-primary">Beauty, Food, Toys & more</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/rider.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Rider Helmets</h5>
+            <p class="card-text text-success">From-699 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/cycle.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">premium Cycle</h5>
+            <p class="card-text text-success">
+              up to 70% off
+            </p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/remote contreol toy.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Remote Control </h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/perfume.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">top perfumes</h5>
+            <p class="card-text text-success">Under-1299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/tyre.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">MRF Tyres</h5>
+            <p class="card-text text-success">From-6000</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Shop for a Cool Summer -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" summer card h-100">
+        <h2 class="mt-5 ms-3 text-dark">Shop for a Cool Summer</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Shop for Your Valentine-->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class="valen card h-100">
+        <h2 class="mt-5 ms-3 text-light">Shop for Your Valentine</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0">
+          <img src="./images/rider.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Rider Helmets</h5>
+            <p class="card-text text-success">From-699 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/cycle.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">premium Cycle</h5>
+            <p class="card-text text-success">
+              up to 70% off
+            </p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/remote contreol toy.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Remote Control </h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/perfume.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">top perfumes</h5>
+            <p class="card-text text-success">Under-1299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/tyre.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">MRF Tyres</h5>
+            <p class="card-text text-success">From-6000</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Sports, Healthcare & more -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class="sport card h-100">
+        <h2 class="mt-5 ms-3 text-light">Sports, Healthcare & more</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Home & Kitchen Essentials -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col 12">
+      <div class=" home card h-100">
+        <h2 class="mt-5 ms-3 text-primary">Home & Kitchen Essentials</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/rider.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Rider Helmets</h5>
+            <p class="card-text text-success">From-699 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/cycle.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">premium Cycle</h5>
+            <p class="card-text text-success">
+              up to 70% off
+            </p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/remote contreol toy.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Remote Control </h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/perfume.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">top perfumes</h5>
+            <p class="card-text text-success">Under-1299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/tyre.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">MRF Tyres</h5>
+            <p class="card-text text-success">From-6000</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Grooming, Books, Auto & more -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class="book card h-100">
+        <h2 class="mt-5 ms-3 text-light">Grooming, Books, Auto & more</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!--Fashion Top Deals -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" fashion card h-100">
+        <h2 class="mt-5 ms-3 text-primary">Fashion Top Deals</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/rider.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Rider Helmets</h5>
+            <p class="card-text text-success">From-699 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/cycle.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">premium Cycle</h5>
+            <p class="card-text text-success">
+              up to 70% off
+            </p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/remote contreol toy.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Remote Control </h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/perfume.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">top perfumes</h5>
+            <p class="card-text text-success">Under-1299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/tyre.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">MRF Tyres</h5>
+            <p class="card-text text-success">From-6000</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Pick Your Styles -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" fashion card h-100">
+        <h2 class="mt-5 ms-3 text-light">Pick Your Styles</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Top Deals On TVs & Appliances -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" best card h-100">
+        <h2 class="mt-5 ms-3 text-light">Top Deals On TVs & Appliances</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/rider.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Rider Helmets</h5>
+            <p class="card-text text-success">From-699 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/cycle.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">premium Cycle</h5>
+            <p class="card-text text-success">
+              up to 70% off
+            </p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/remote contreol toy.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Remote Control </h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/perfume.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">top perfumes</h5>
+            <p class="card-text text-success">Under-1299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/tyre.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">MRF Tyres</h5>
+            <p class="card-text text-success">From-6000</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- Furniture Bestsellers -->
+  <div class=" bes row row-cols-2 row-cols-md-6 g-1 text-center mt-2 "data-aos="fade-up"data-aos-duration="1500">
+    <div class="col-12">
+      <div class=" furniture card h-100">
+        <h2 class="mt-5 ms-3 text-light">Furniture Bestsellers</h2>
+
+        <div class="card-body">
+          <h5 class="card-title"><button class="bg-info">View all</button></h5>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/hp-laserjet-m1005-multifunction-original-imadxhzpeb9qbrfg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Printrs</h5>
+            <p class="card-text text-success">From-3999 </p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/m-12954-colorcase-original-imag7g7knnn66wdh.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Mobile glass cover</h5>
+            <p class="card-text text-success">From-299</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/vg279qm-90lm05h0-b01320-asus-original-imafug9suqantxk2.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Moniter</h5>
+            <p class="card-text text-success">From-8279</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/z-24-200mm-z5-nikon-original-imag2zuekuxgxsgg.webp" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Top mirrorless camera</h5>
+            <p class="card-text text-success">Shop Now</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+    <div class="col">
+      <a href="" class="text-decoration-none">
+        <div class="card border-0 h-100">
+          <img src="./images/zapsa03tpu01691-zapcase-original-imagcgffegrnhh6x.webp" class=" card-img-top">
+          <div class="card-body">
+            <h5 class="card-title text-black">Designer cover</h5>
+            <p class="card-text text-success">Under-199</p>
+          </div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid mt-5">
+
+    <h2>No Cost EMI</h2>
+    In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to
+    shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and
+    small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If
+    you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms
+    and conditions apply.<br><br>
+    <h2>EMI on Debit Cards</h2>
+    Did you know debit card holders account for 79.38 crore in the country, while there are
+    only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping
+    accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without
+    having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State
+    Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply. <br><br>
+    <h2>Mobile Exchange Offers</h2>
+    Get an instant discount on the phone that you have been eyeing on. Exchange your old
+    mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working
+    condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with
+    Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever
+    possible. Terms and conditions apply. <br><br>
+    <h2>What Can You Buy From Flipkart?</h2>
+    <h2>Mobile Phones</h2>
+    From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there.
+    Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification
+    apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top
+    brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're
+    buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection
+    Plan, you will never again find the need to run around service centres. This plan entails you to a number of
+    post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and
+    software glitches, and replacements -<b>the Flipkart Complete Mobile Protection</b> covers a comprehensive range of
+    post-purchase problems, with door-to-door services. <br><br>
+    <h2>Electronic Devices and Accessories</h2>
+    When it comes to laptops, we are not far behind. Filter among dozens of
+    super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for
+    personalized results in a flash. All you students out there, confused about what laptop to get? Our <b>Back To
+      College Store</b> segregates laptops purpose wise (gaming, browsing and research, project work, entertainment,
+    design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience
+    that is quicker and simpler.<br><br>Photography lovers, you couldn't land at a better page than ours. Cutting-edge
+    DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for
+    adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro,
+    Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better
+    page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant
+    cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for
+    professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. <br><br>Turn
+    your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home
+    theatres, JBL soundbars and Philips tower speakers for an experience to remember.<br><br>How about jazzing up your
+    phone with our quirky designer cases and covers? Our wide-ranging mobile accessories starting from headphones, power
+    banks, memory cards, mobile chargers, to selfie sticks can prove to be ideal travel companions for you and your
+    phone; never again worry about running out of charge or memory on your next vacation.<br><br>
+    <h2>Large Appliances</h2>
+    Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines -
+    discover everything you need to run a house under one roof. Our <b>Dependable TV and Appliance Store</b> ensures
+    zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your
+    convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured,
+    value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG,
+    Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others. <br><br>
+    <h2>Small Home Appliances</h2>
+    Find handy and practical home appliances designed to make your life simpler: electric
+    kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving
+    appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at
+    home.<br><br>
+    <h2>Lifestyle</h2>
+    <b>'India ka Fashion Capital'</b>, is your one-stop fashion destination for anything and
+    everything you need to look good. Our exhaustive range of Western and Indian wear, summer and winter clothing,
+    formal and casual footwear, bridal and artificial jewellery, long-lasting make-up, grooming tools and accessories
+    are sure to sweep you off your feet. Shop from crowd favourites like Vero Moda, Forever 21, Only, Arrow, Woodland,
+    Nike, Puma, Revlon, Mac, and Sephora among dozens of other top-of-the-ladder names. From summer staple maxi dresses,
+    no-nonsense cigarette pants, traditional Bandhani kurtis to street-smart biker jackets, you can rely on us for a
+    wardrobe that is up to date. Explore our in-house brands like Metronaut, Anmi, and Denizen, to name a few, for
+    carefully curated designs that are the talk of the town. Get ready to be spoiled for choice.Festivals, office
+    get-togethers, weddings, brunches, or nightwear - Flipkart will have your back each time.<br><br>
+    <h2>Home and Furniture</h2>
+    Moving to a new place is never easy, especially if you're buying new furniture. Beds,
+    sofa sets, dining tables, wardrobes, and TV units - it's not easy to set up everything again. With the hundreds of
+    options thrown at you, the ride could be overwhelming. What place is reliable, what furniture will stand the test of
+    time? These are questions you must ask before you choose a store. Well, our <b>Durability Certified Furniture
+      Store</b> has not only curated a range of furniture keeping in mind the modern Indian consumer but furniture that
+    comes with a lab certification, ensuring they last you for up to 10 years. Yes, all our furniture has gone through
+    35 stability and load tests so that you receive only the best-quality furniture. <b>Be FurniSure</b>, always. Names
+    to look out for are Nilkamal, Godrej Interio, Urban Ladder, HomeTown, Durian and Perfect Homes. <br><br>You may have
+    your furniture all set up, but they could end up looking flat and incomplete without complementary decor. Curtains,
+    cushion covers, bed sheets, wall shelves, paintings, floor lamps - find everything that turns a house to an inviting
+    home under one roof at Flipkart. <br><br>
+    <h2>Baby and Kids</h2>
+    Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an
+    expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with
+    the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a
+    second thought. Huggies, Pampers, MamyPoko, and Johnson &amp; Johnson: we host only the most-trusted names in the
+    business for your baby.<br><br>
+    <h2>Books, Sports and Games</h2>
+    Work hard and no play? We don't believe in that. Get access to best-selling fiction
+    and non-fiction books by your favourite authors, thrilling English and Indian blockbusters, most-wanted gaming
+    consoles, and a tempting range of fitness and sports gadgets and equipment bound to inspire you to get moving.
+    <br><br>
+    <h2>Grocery/Supermart</h2>
+    Launching into the grocery vertical, Flipkart introduces <b>Supermart</b> that is out to
+    bring everyday essentials close to you. From pulses, spices, dairy, personal and sanitary care, breakfast
+    essentials, health drinks, spreads, ready to cook, grooming to cleaning agents, we are happy to present everything
+    you need to run a house. Now buy Grocery products for as low as 1 Rupee only - our <b>1 Rupee Store</b> presents new
+    products every day for a nominal price of 1 Rupee only. Terms and conditions apply.
+  </div>
+
+  <!-- footer -->
+  <div class="footer bg-black">
+    <div class=" container text-start  text-light h-100 pt-5 mt-4">
+      <div class="row">
+        <div class="col">
+          <p>ABOUT</p>
+          <p><a href="">Contact Us</a></p>
+          <p><a href="">About Us</a></p>
+          <p><a href="">Careers</a></p>
+          <p><a href="">Stories</a></p>
+          <p><a href="">Press</a></p>
+          <p><a href="">Wholesale</a></p>
+          <p><a href="">Corporate Information</a></p>
+        </div>
+        <div class="col">
+          <p>HELP</p>
+          <p><a href="">Payment</a></p>
+          <p><a href="">Shopping</a></p>
+          <p><a href="">Return</a></p>
+          <p><a href="">FAQ</a></p>
+          <p><a href="">Report</a></p>
+
+        </div>
+        <div class="col">
+          <p>SOCIAL</p>
+          <p><a href="">Facebook</a></p>
+          <p><a href="">Twitter</a></p>
+          <p><a href="">Youtube</a></p>
+        </div>
+        <div class="col">
+          <p>Mail Us:</p>
+          <p>Internet Private Limited,
+            Buildings Alyssa, Begonia &
+            Clove Embassy Tech Village,
+            Outer Ring Road, Devarabeesanahalli Village,
+            Bengaluru, 560103,
+            Karnataka, India</p>
+        </div>
+        <hr>
+        <div class="col">
+          <p>Registered Office Address:</p>
+          <p>Internet Private Limited,
+            Buildings Alyssa, Begonia &
+            Clove Embassy Tech Village,
+
+            Outer Ring Road, Devarabeesanahalli Village,
+
+            Bengaluru, 560103,
+
+            Karnataka, India
+
+            CIN : U51109KA2012PTC066107
+
+            Telephone: 044-45614700</p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
